@@ -76,3 +76,6 @@ main{
     translate: 1000px 1000px;
     transition: translate 5s;
 }
+#btnnavbar{
+    background-color: #ffd60a;
+}
