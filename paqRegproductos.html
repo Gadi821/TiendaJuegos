@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet" >
+  <link rel="stylesheet" type="text/css" href="csspricipal.css"/>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md" id="navbar1">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <div>
+              <img src="imagen/Cyborg Chan.png" alt="img" id="logo">
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">
+                  <button type="button" class="btn btn-primary">
+                    Home
+                  </button>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <button type="button" class="btn btn-primary">
+                    Productos
+                  </button>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="pagGaleria.html">Opcion 1</a></li>
+                  <li><a class="dropdown-item" href="#">Opcion 2</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Opcion 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><button type="button" class="btn btn-primary">
+                  Acerca de
+                </button></a>
+              </li>
+              <li class="nav-item">
+                  <!-- Button trigger modal -->
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <button type="button" class="btn btn-warning">
+                      Registro de productos
+                    </button>
+                  </a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="buscar" aria-label="buscar">
+              <button class="btn btn-outline-info" type="submit">Busqueda</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  </header>
+  <main class="container-fluid">
+    <form class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="inputnom">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Codigo</label>
+          <input type="text" class="form-control" id="inputcod">
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Plataforma</label>
+            <select id="inputpt" class="form-select">
+              <option selected>PC</option>
+              <option>PS4</option>
+              <option>PS5</option>
+              <option>XboxOne</option>
+              <option>Xbox360</option>
+              <option>Nintedo Switch</option>
+            </select>
+          </div>
+        <div class="col-md-8">
+          <label class="form-label">Tipo de juego</label>
+          <input type="text" class="form-control" id="inputtipo">
+        </div>
+        <div class="col-mb-3">
+            <label class="form-label">Descripcion producto</label>
+            <textarea class="form-control" id="inputdes" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="inputimg" class="form-label">Imagen del producto</label>
+            <input class="form-control" type="file" id="inputimg">
+          </div>
+        
+        <div class="col-12">
+          <button type="button" class="btn btn-primary" id="btnag">Agregar producto</button>
+        </div>
+      </form>
+  </main>
+  <section class="container-fluid">
+    <div>
+        <table class="table table-dark table-striped" id="tablareg" border="2">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Codigo</th>
+                <th>Plataforma</th>
+                <th>Tipo</th>
+                <th>Descripcion</th>
+                <th>Imag. ref</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+    </div>
+  </section>
+  <footer class="container-fluid bg-primary">
+    <div class="row text-center">
+      <a href="https://www.facebook.com/?locale=es_LA" class="col-3">
+        <img src="https://cdn-icons-png.flaticon.com/128/174/174848.png" alt="img" id="redes">
+      </a>
+      <a href="https://www.instagram.com/" class="col-3">
+        <img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="img" id="redes">
+      </a>
+      <a href="https://twitter.com/?lang=es" class="col-3">
+        <img src="https://cdn-icons-png.flaticon.com/128/174/174876.png" alt="img" id="redes">
+      </a>
+      <a href="https://www.youtube.com/?hl=es&gl=ES" class="col-3">
+        <img src="https://cdn-icons-png.flaticon.com/128/174/174836.png" alt="img" id="redes">
+      </a>
+    </div>
+    <div class="text-center">
+      <p>copy rigth</p>
+    </div>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+<script src="./js/bootstrap.min.js">
+</script>
+<script src="jsRegprod.js"></script>
+<script src="js/jquery-3.7.1.js"></script>
+</body>
+
+</html>

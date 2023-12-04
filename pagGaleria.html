@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cssgaleria.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md" id="navbar1">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <div id="contlogo">
+                  <img src="imagen/Cyborg Chan.png" alt="img" id="logo">
+                </div>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pagLogin.html"><button type="button" class="btn btn-primary">
+                      Login
+                    </button></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">
+                      <button type="button" class="btn btn-primary">
+                        Home
+                      </button>
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <button type="button" class="btn btn-warning">
+                        Productos
+                      </button>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Opcion 1</a></li>
+                      <li><a class="dropdown-item" href="#">Opcion 2</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Opcion 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                      <!-- Button trigger modal -->
+                      <a class="nav-link" href="#">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Registro de productos
+                        </button>
+                      </a>
+                      
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Login empleado</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Codigo de usuario</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">Solo los usuarios autorizados pueden acceder.</div>
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <a href="paqRegproductos.html">
+                                  <button type="button" class="btn btn-primary">Submit</button>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </li>
+                </ul>
+                <button class="btn position-relative btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="btncompras">Articulos seleccionados
+                    <span id="span1" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        0
+                    </span>
+                </button>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center g-2">
+                <div class="col-md-5 col-lg-3">
+                    <div id="tar1" class="card">
+                        <img src="Productos/Prod1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre:  <span id="nombre1">Resident Evil 4</span></h5>
+                            <p class="card-text">Descripcion del producto</p>
+                            <div><p>precio: Bs<span id="precio1">360</span></p></div>
+                            <a href="#" id="btnprod1" class="btn btn-primary">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-3">
+                    <div id="tar2" class="card">
+                        <img src="Productos/Prod2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre:  <span id="nombre2">GTA 5</span></h5>
+                            <p class="card-text">Descripcion del producto</p>
+                            <div><p>precio: Bs<span id="precio2">240</span></p></div>
+                            <a href="#" id="btnprod2" class="btn btn-primary">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-3">
+                    <div id="tar3" class="card">
+                        <img src="Productos/Prod3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre:  <span id="nombre3">Persona 5 Strikers</span></h5>
+                            <p class="card-text">Descripcion del producto</p>
+                            <div><p>precio: Bs<span id="precio3">420</span></p></div>
+                            <a href="#" id="btnprod3" class="btn btn-primary">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-3">
+                    <div id="tar4"  class="card">
+                        <img src="Productos/Prod4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre:  <span id="nombre4">Super Smash Bros</span></h5>
+                            <p class="card-text">Descripcion del producto</p>
+                            <div><p>precio: Bs<span id="precio4">400</span></p></div>
+                            <a href="#" id="btnprod4" class="btn btn-primary">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-3">
+                    <div id="tar5"  class="card">
+                        <img src="Productos/Prod5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre:  <span id="nombre5">Dark Souls III</span></h5>
+                            <p class="card-text">Descripcion del producto</p>
+                            <div><p>precio: Bs<span id="precio5">320</span></p></div>
+                            <a href="#" id="btnprod5" class="btn btn-primary">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-3">
+                    <div id="tar6"  class="card">
+                        <img src="Productos/Prod6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre:  <span id="nombre6">God of War Ragnarok</span></h5>
+                            <p class="card-text">Descripcion del producto</p>
+                            <div><p>precio: Bs<span id="precio6">435</span></p></div>
+                            <a href="#" id="btnprod6" class="btn btn-primary">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-3">
+                    <div id="tar7"  class="card">
+                        <img src="Productos/Prod7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre:  <span id="nombre7">Mario Kart 8 Deluxe</span></h5>
+                            <p class="card-text">Descripcion del producto</p>
+                            <div><p>precio: Bs<span id="precio7">380</span></p></div>
+                            <a href="#" id="btnprod7" class="btn btn-primary">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-3">
+                    <div id="tar8"  class="card">
+                        <img src="Productos/Prod8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre:  <span id="nombre4">Splatoon 3</span></h5>
+                            <p class="card-text">Descripcion del producto</p>
+                            <div><p>precio: Bs<span id="precio4">420</span></p></div>
+                            <a href="#" id="btnprod8" class="btn">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"  aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Lista de productos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <table id="tabla" class=" table-bordered">
+                    <thead>
+                        <tr>
+                            <td>Nº</td>
+                            <td>Nombre</td>
+                            <td>Precio</td>
+                            
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div class="d-grid gap-2">
+                    <button type="button" name="" id="btnElim" class="btn btn-danger">ELIMINAR</button>
+                </div>
+                <div class="d-grid gap-2">
+                    <button type="button" name="" id="btnTotal" class="btn btn-primary">Comprar Todo</button>
+                </div>
+                <div><p>Total: <span id="preciototal"></span>Bs</p></div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid bg-primary">
+        <div class="row text-center">
+          <a href="https://www.facebook.com/?locale=es_LA" class="col-3">
+            <img src="https://cdn-icons-png.flaticon.com/128/174/174848.png" alt="img" id="redes">
+          </a>
+          <a href="https://www.instagram.com/" class="col-3">
+            <img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="img" id="redes">
+          </a>
+          <a href="https://twitter.com/?lang=es" class="col-3">
+            <img src="https://cdn-icons-png.flaticon.com/128/174/174876.png" alt="img" id="redes">
+          </a>
+          <a href="https://www.youtube.com/?hl=es&gl=ES" class="col-3">
+            <img src="https://cdn-icons-png.flaticon.com/128/174/174836.png" alt="img" id="redes">
+          </a>
+        </div>
+        <div class="text-center">
+          <p>copy rigth</p>
+        </div>
+      </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="js/jquery-3.7.1.js"></script>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+    <script src="js/bootstrap.min.js">
+
+    </script>
+    <script src="jsGaleria.js"></script>
+</body>
+
+</html>

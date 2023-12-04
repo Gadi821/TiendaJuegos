@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.selected{
+    cursor: pointer;
+}
+.seleccionada{
+    background-color: #ffc300;
+    color: #000;
+}
+.selected:hover{
+    background-color: #001d3d;
+    color: #ffd60a;
+}
+table{
+    width: 100%;
+}
+.card{
+    background-color: lightblue;
+    width: 22rem;
+    margin: 10px;
+}
+#offcanvasRight{
+    background-color: #000814;
+    color: #ffd60a;
+}
+tbody{
+    background-color: lightblue;
+    color: #000;
+}
+thead{
+    background-color: #003566;
+    color: #ffd60a;
+}
+.btn{
+    background-color: #003566;
+    color: #ffd60a;
+}
+.card2{
+    transform: scaleX(1.1) scaleY(1.1);
+    transition: transform 1s;
+    background-color: aqua;
+}
+#logo{
+    height: 100px;
+    width: 100px;
+}
+#logo2{
+    height: 200px;
+    width: 200px;
+}
+#navbar1{
+    background-color: #001d3d;
+}
+#navbar2{
+    background-color: #001d3d;
+    font-size: 20px;
+    color: #ffd60a;
+}
+#btncompras{
+    width: 200px;
+}
+img{
+    width: 600px;
+    height: 450px;
+}
+main{
+    background-color: #003566;
+}
+#redes{
+    height: 50px;
+    width: 50px;
+}
+.mover{
+    translate: 1000px 1000px;
+    transition: translate 5s;
+}
